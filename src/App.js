@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   const [intervals, setIntervals] = useState({});
   const [isRunning, setIsRunning] = useState(true);
-  const [] = useState();
+  const [isPaused, setIsPaused] = useState(true);
   const [] = useState();
 
   return (
