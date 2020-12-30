@@ -8,7 +8,7 @@ function App() {
   const [intervals, setIntervals] = useState({});
   const [isRunning, setIsRunning] = useState(true);
   const [isPaused, setIsPaused] = useState(true);
-  const [] = useState();
+  const [pausedTime, setPausedTime] = useState(null);
 
   return (
     <div className="App">
