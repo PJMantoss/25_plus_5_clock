@@ -9,6 +9,7 @@ function App() {
   const [isRunning, setIsRunning] = useState(true);
   const [isPaused, setIsPaused] = useState(true);
   const [pausedTime, setPausedTime] = useState(null);
+  const [time, setTime] = useState('25:00');
 
   return (
     <div className="App">
