@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import Timer from './components/Timer';
-import IntervalSetting from './components/IntervalSetting';
-import Footer from './components/Footer';
+// import Timer from './components/Timer';
+// import IntervalSetting from './components/IntervalSetting';
+// import Footer from './components/Footer';
 import './App.css';
 
 function App() {
