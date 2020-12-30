@@ -5,6 +5,11 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [intervals, setIntervals] = useState({});
+  const [isRunning, setIsRunning] = useState(true);
+  const [] = useState();
+  const [] = useState();
+
   return (
     <div className="App">
       <h1>25 + 5 Clock</h1>
