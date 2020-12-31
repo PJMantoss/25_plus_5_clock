@@ -10,7 +10,7 @@ function IntervalSetting(props){
             <div>
                 <button id={`${type}-decrement`} onClick={props.handleChange}> &#9660; </button>
 
-                <p id={`${type}-length`}> {type.length} </p>
+                <p id={`${type}-length`}> {props.length} </p>
 
                 <button id={`${type}-increment`} onClick={props.handleChange}> &#9650; </button>
             </div>
