@@ -107,7 +107,12 @@ function App() {
         break: 5,
         session: 25
       }
-    })
+    });
+
+    setIsRunning({isRunning: true});
+    setIsPaused({isPaused: true});
+    setPausedTime({pausedTime: null});
+    setTime({time: '25:00'})
   }
 
   return (
