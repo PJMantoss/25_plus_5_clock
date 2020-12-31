@@ -1,6 +1,6 @@
 import { useState } from 'react';
-// import Timer from './components/Timer';
-// import IntervalSetting from './components/IntervalSetting';
+import Timer from './components/Timer';
+import IntervalSetting from './components/IntervalSetting';
 // import Footer from './components/Footer';
 import './App.css';
 
@@ -14,6 +14,8 @@ function App() {
   return (
     <div className="App">
       <h1>25 + 5 Clock</h1>
+      <IntervalSetting />
+      <Timer />
     </div>
   );
 }
