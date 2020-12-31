@@ -12,7 +12,8 @@ function Timer(props){
             >
                 &#9199;
             </button>
-            <button id="reset" onClick={props.reset}></button>
+            <button id="reset" onClick={props.reset}> &#8634; </button>
+            <audio src={} id="" type=""></audio>
         </section>
     )
 }
