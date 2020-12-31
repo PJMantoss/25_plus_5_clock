@@ -71,6 +71,18 @@ function App() {
     setIsPaused({isPaused: false});
     let minutes = getMinutes(),
         seconds = getSeconds();
+
+        interval = setInterval(() => {
+          seconds--;
+          if(seconds < 0){
+            if(minutes > 0){
+              seconds = 59;
+              minutes--;
+            } else {
+              setIsRunning({isRunning: !isRunning});
+            }
+          }
+        }, 1000)
   }
 
   return (
