@@ -11,7 +11,9 @@ function App() {
   const [pausedTime, setPausedTime] = useState(null);
   const [time, setTime] = useState('25:00');
 
-  leftPad = value => {
+  //let intervalTypes = Object.keys(intervals);
+
+  const leftPad = value => {
     if(value > 9){
       return value + '';
     } else {
@@ -19,23 +21,23 @@ function App() {
     }
   }
 
-   handleChange = e => {
-    const buttonElementId = e.target.id;
-    const [intervalType, intervalDirection] = buttonElementId.split('-');
-    const intervals = {...this.state.intervals};
+   const handleChange = e => {
+      const buttonElementId = e.target.id;
+      const [intervalType, intervalDirection] = buttonElementId.split('-');
+      const intervals = {...intervals};
 
-    if(intervalDirection === 'increment'){
-      intervals[intervalType]++;
-    }else{
-      intervals[intervalType]--;
-    }
-
-    if(intervals[intervalType] >= 1 && intervals[intervalType] <= 60){
-      setIntervals({intervals});
-      if(intervalType === 'session'){
-        setTime({time: ``})
+      if(intervalDirection === 'increment'){
+        intervals[intervalType]++;
+      }else{
+        intervals[intervalType]--;
       }
-    }
+
+      if(intervals[intervalType] >= 1 && intervals[intervalType] <= 60){
+        setIntervals({intervals});
+        if(intervalType === 'session'){
+          setTime({time: `${leftPad(intervals[intervalType])}:00`})
+        }
+      }
   }
 
   return (
