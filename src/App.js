@@ -11,7 +11,15 @@ function App() {
   const [pausedTime, setPausedTime] = useState(null);
   const [time, setTime] = useState('25:00');
 
-  const handleChange = e => {
+  leftPad = value => {
+    if(value > 9){
+      return value + "";
+    } else {
+      return 
+    }
+  }
+
+   handleChange = e => {
     const buttonElementId = e.target.id;
     const [intervalType, intervalDirection] = buttonElementId.split('-');
     const intervals = {...this.state.intervals};
