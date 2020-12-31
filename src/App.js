@@ -97,6 +97,12 @@ function App() {
     })
   }
 
+  const reset = () => {
+    clearInterval(interval);
+    audioControl('pause');
+    audioControl('rewind');
+  }
+
   return (
     <div className="App">
       <h1>25 + 5 Clock</h1>
