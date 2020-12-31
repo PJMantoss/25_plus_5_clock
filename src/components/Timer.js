@@ -1,11 +1,13 @@
 import React from 'react';
+import alarm from '../Alarm-Fast-A1.mp3';
 
 function Timer(props){
     return(
-        <section>
-            <h2></h2>
-            <p></p>
-            <button></button>
+        <section id="timer">
+            <h2 id="timer-label"></h2>
+            <p id="timer-left"></p>
+            <button id="start_stop" onClick={}></button>
+            <button id="reset" onClick={}></button>
         </section>
     )
 }
