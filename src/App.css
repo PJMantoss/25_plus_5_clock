@@ -3,17 +3,20 @@
 }
 
 #app-div{
+  background: black;
+  color: #fff;
   display: block;
   width: 100%;
   position: center center;
   text-align: center;
   align-self: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto;
+  padding: 20px 0;
+  border-radius: 10px;
 }
 
 section {
-  border: 3px #A80095 solid;
+  border: 3px orange solid;
   margin: 10px;
   border-radius: 10px;
   display: inline-block;
@@ -32,9 +35,9 @@ button {
   font-size: 2rem;
   width: 54px;
   height: 52px;
-  color: #1D3461;
-  background-color: #FF69EB;
-  border: 5px #1D3461 double;
+  color: rgb(17, 17, 17);
+  background-color: orange;
+  border: 5px rgb(17, 17, 17) double;
   cursor: pointer;
   margin: 0 20px;
 }
