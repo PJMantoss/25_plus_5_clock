@@ -85,8 +85,8 @@ function App() {
               seconds = getSeconds();
             }
           }
-          setTime({time: `${leftPad(minutes)}:00`})
-        }, 1000)
+          setTime({time: `${leftPad(minutes)}:${leftPad(seconds)}`})
+        }, 1000);
   }
 
   return (
