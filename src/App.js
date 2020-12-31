@@ -45,6 +45,8 @@ function App() {
       return parseInt(pausedTime[0]);
     }else if(isRunning){
       return intervals.session;
+    } else {
+      return intervals.break;
     }
   }
 
