@@ -67,6 +67,12 @@ function App() {
     }
   }
 
+  const countDown = () => {
+    setIsPaused({isPaused: false});
+    let minutes = getMinutes(),
+        seconds = getSeconds();
+  }
+
   return (
     <div className="App">
       <h1>25 + 5 Clock</h1>
