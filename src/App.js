@@ -120,7 +120,7 @@ class App extends Component {
 
   render(){
     return (
-      <div>
+      <div id="app-div">
         <h1>25 + 5 Clock</h1>
         {this.intervalTypes.map(type => <IntervalSetting 
                                         key={type} 
