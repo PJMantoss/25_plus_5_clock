@@ -11,6 +11,11 @@ function App() {
   const [pausedTime, setPausedTime] = useState(null);
   const [time, setTime] = useState('25:00');
 
+  const handleChange = e => {
+    const buttonElementId = e.target.id;
+    const [intervalType, intervalDirection] = buttonElementId.split('-');
+  }
+
   return (
     <div className="App">
       <h1>25 + 5 Clock</h1>
