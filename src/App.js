@@ -5,7 +5,7 @@ import IntervalSetting from './components/IntervalSetting';
 import './App.css';
 
 function App() {
-  const [intervals, setIntervals] = useState({});
+  const [intervals, setIntervals] = useState({break: 5, session: 25});
   const [isRunning, setIsRunning] = useState(true);
   const [isPaused, setIsPaused] = useState(true);
   const [pausedTime, setPausedTime] = useState(null);
@@ -43,6 +43,8 @@ function App() {
   const getMinutes = () => {
     if(pausedTime !== null){
       return parseInt(pausedTime[0]);
+    }else if(isRunning){
+
     }
   }
 
