@@ -50,6 +50,14 @@ function App() {
     }
   }
 
+  const getSeconds = () => {
+    if(pausedTime !== null){
+      return parseInt(pausedTime[1])
+    } else {
+      return 0;
+    }
+  }
+
   return (
     <div className="App">
       <h1>25 + 5 Clock</h1>
