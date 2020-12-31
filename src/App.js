@@ -58,6 +58,10 @@ function App() {
     }
   }
 
+  const audioControl = action => {
+    const audio = getElementById("beep");
+  }
+
   return (
     <div className="App">
       <h1>25 + 5 Clock</h1>
