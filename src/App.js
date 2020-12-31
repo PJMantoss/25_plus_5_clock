@@ -107,10 +107,10 @@ function App() {
       }
     });
 
-    setIsRunning({isRunning: true});
-    setIsPaused({isPaused: true});
-    setPausedTime({pausedTime: null});
-    setTime({time: '25:00'})
+    setIsRunning({ isRunning: true });
+    setIsPaused({ isPaused: true });
+    setPausedTime({ pausedTime: null });
+    setTime({ time: '25:00' })
   }
 
   return (
