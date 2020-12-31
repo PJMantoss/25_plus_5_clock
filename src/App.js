@@ -2,6 +2,7 @@ import React,{ Component } from 'react';
 import Timer from './components/Timer';
 import IntervalSetting from './components/IntervalSetting';
 import Footer from './components/Footer';
+import ReactFCCtest from 'react-fcctest';
 import './App.css';
 
 class App extends Component {
@@ -139,6 +140,7 @@ class App extends Component {
             pause={this.pause} 
         />
         <Footer />
+        <ReactFCCtest />
       </div>
     );
   }
