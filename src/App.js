@@ -59,7 +59,7 @@ function App() {
   }
 
   const audioControl = action => {
-    const audio = getElementById("beep");
+    const audio = document.getElementById("beep");
     if(action === 'rewind'){
       audio.currentTime = 0;
     } else{
@@ -72,7 +72,7 @@ function App() {
     let minutes = getMinutes(),
         seconds = getSeconds();
 
-        interval = setInterval(() => {
+        let interval = setInterval(() => {
           seconds--;
           if(seconds < 0){
             if(minutes > 0){
@@ -119,8 +119,8 @@ function App() {
       {intervalTypes.map(type => <IntervalSetting 
                                       key={type} 
                                       type={type} 
-                                      length={} 
-                                      handleChange={} 
+                                      length={intervals[type]} 
+                                      handleChange={handleChange} 
                                   />)
       }
       <Timer />
