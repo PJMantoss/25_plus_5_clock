@@ -5,13 +5,13 @@ function IntervalSetting(props){
 
     return(
         <section>
-            <h2></h2>
+            <h2 id={`${type}-label`}>{props.type}</h2>
 
             <div>
                 <button id={} onClick={}></button>
 
                 <p></p>
-                
+
                 <button id={} onClick={}></button>
             </div>
         </section>
