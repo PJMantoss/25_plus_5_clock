@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React,{ useState } from 'react';
 import Timer from './components/Timer';
 import IntervalSetting from './components/IntervalSetting';
 // import Footer from './components/Footer';
