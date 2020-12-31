@@ -24,7 +24,7 @@ function App() {
    const handleChange = e => {
       const buttonElementId = e.target.id;
       const [intervalType, intervalDirection] = buttonElementId.split('-');
-      const intervals = {...intervals};
+       intervals = {...intervals};
 
       if(intervalDirection === 'increment'){
         intervals[intervalType]++;
@@ -72,7 +72,7 @@ function App() {
     let minutes = getMinutes(),
         seconds = getSeconds();
 
-        let interval = setInterval(() => {
+        this.interval = setInterval(() => {
           seconds--;
           if(seconds < 0){
             if(minutes > 0){
@@ -90,13 +90,13 @@ function App() {
   }
 
   const pause = () => {
-    clearInterval(interval);
+    clearInterval(this.interval);
     setIsPaused({ isPaused: true })
     setPausedTime({ pausedTime: time.split(':') })
   }
 
   const reset = () => {
-    clearInterval(interval);
+    clearInterval(this.interval);
     audioControl('pause');
     audioControl('rewind');
 
@@ -123,7 +123,8 @@ function App() {
                                       handleChange={handleChange} 
                                   />)
       }
-      <Timer />
+
+      <Timer interval={} reset={} time={}  />
     </div>
   );
 }
