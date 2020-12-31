@@ -41,7 +41,7 @@ function App() {
   }
 
   const getMinutes = () => {
-    if(pausedTime !=== null){
+    if(pausedTime !== null){
       return parseInt(pausedTime[0]);
     }
   }
