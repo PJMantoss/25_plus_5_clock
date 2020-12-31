@@ -101,6 +101,13 @@ function App() {
     clearInterval(interval);
     audioControl('pause');
     audioControl('rewind');
+
+    setIntervals({
+      intervals: {
+        break: 5,
+        session: 25
+      }
+    })
   }
 
   return (
