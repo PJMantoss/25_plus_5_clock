@@ -124,7 +124,14 @@ function App() {
                                   />)
       }
 
-      <Timer interval={} reset={} time={}  />
+      <Timer 
+          interval={isRunning ? intervalTypes[1] : intervalTypes[0]} 
+          reset={} 
+          time={} 
+          start={} 
+          isPaused={} 
+          pause={} 
+      />
     </div>
   );
 }
