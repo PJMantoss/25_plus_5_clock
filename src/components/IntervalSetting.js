@@ -8,11 +8,11 @@ function IntervalSetting(props){
             <h2 id={`${type}-label`}>{props.type}</h2>
 
             <div>
-                <button id={`${type}-decrement`} onClick={}></button>
+                <button id={`${type}-decrement`} onClick={props.handleChange}></button>
 
                 <p></p>
 
-                <button id={`${type}-increment`} onClick={}></button>
+                <button id={`${type}-increment`} onClick={props.handleChange}></button>
             </div>
         </section>
     )
