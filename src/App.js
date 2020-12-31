@@ -23,7 +23,10 @@ function App() {
     }
 
     if(intervals[intervalType] >= 1 && intervals[intervalType] <= 60){
-      
+      setIntervals({intervals});
+      if(intervalType === 'session'){
+        setTime({time: ``})
+      }
     }
   }
 
