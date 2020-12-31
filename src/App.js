@@ -91,10 +91,8 @@ function App() {
 
   const pause = () => {
     clearInterval(interval);
-    setIsPaused({
-      isPaused: true,
-      pausedTime: time.split(':')
-    })
+    setIsPaused({ isPaused: true })
+    setPausedTime({ pausedTime: time.split(':') })
   }
 
   const reset = () => {
