@@ -80,8 +80,12 @@ function App() {
               minutes--;
             } else {
               setIsRunning({isRunning: !isRunning});
+              audioControl('play');
+              minutes = getMinutes();
+              seconds = getSeconds();
             }
           }
+          setTime({time: `${leftPad(minutes)}:00`})
         }, 1000)
   }
 
