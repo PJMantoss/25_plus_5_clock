@@ -16,7 +16,11 @@ function App() {
     const [intervalType, intervalDirection] = buttonElementId.split('-');
     const intervals = {...this.state.intervals};
 
-    if(){}else{}
+    if(intervalDirection === 'increment'){
+      intervals[intervalType]++;
+    }else{
+      intervals[intervalType]--;
+    }
   }
 
   return (
