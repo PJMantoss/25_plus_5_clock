@@ -11,7 +11,7 @@ function App() {
   const [pausedTime, setPausedTime] = useState(null);
   const [time, setTime] = useState('25:00');
 
-  let intervalTypes = Object.keys(intervals);
+  let intervalTypes = [...intervals];
 
   const leftPad = value => {
     if(value > 9){
@@ -24,18 +24,18 @@ function App() {
    const handleChange = e => {
       const buttonElementId = e.target.id;
       const [intervalType, intervalDirection] = buttonElementId.split('-');
-       intervals = {...intervals};
+      const newIntervals = {...intervals};
 
       if(intervalDirection === 'increment'){
-        intervals[intervalType]++;
+        newIntervals[intervalType]++;
       }else{
-        intervals[intervalType]--;
+        newIntervals[intervalType]--;
       }
 
-      if(intervals[intervalType] >= 1 && intervals[intervalType] <= 60){
-        setIntervals({intervals});
+      if(newIntervals[intervalType] >= 1 && newIntervals[intervalType] <= 60){
+        setIntervals({intervals: newIntervals});
         if(intervalType === 'session'){
-          setTime({time: `${leftPad(intervals[intervalType])}:00`})
+          setTime({time: `${leftPad(newIntervals[intervalType])}:00`})
         }
       }
   }
