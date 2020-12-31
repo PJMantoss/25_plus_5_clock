@@ -1,5 +1,5 @@
 import React from 'react';
-import alarm from '../Alarm-Fast-A1.mp3';
+import alarmMp3 from '../Alarm-Fast-A1.mp3';
 
 function Timer(props){
     return(
@@ -13,7 +13,7 @@ function Timer(props){
                 &#9199;
             </button>
             <button id="reset" onClick={props.reset}> &#8634; </button>
-            <audio src={} id="" type=""></audio>
+            <audio src={`${alarmMp3}`} id="beep" type="audio/mpeg"></audio>
         </section>
     )
 }
