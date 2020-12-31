@@ -50,6 +50,7 @@ button:active {
 
 #timer {
   display: block;
+  padding-bottom: 10px;
 }
 
 #start_stop, #reset {
