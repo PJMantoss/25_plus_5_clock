@@ -93,7 +93,7 @@ function App() {
     clearInterval(interval);
     setIsPaused({
       isPaused: true,
-      pausedTime: time.split()
+      pausedTime: time.split(':')
     })
   }
 
