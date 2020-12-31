@@ -13,9 +13,9 @@ function App() {
 
   leftPad = value => {
     if(value > 9){
-      return value + "";
+      return value + '';
     } else {
-      return 
+      return '0' + value;
     }
   }
 
