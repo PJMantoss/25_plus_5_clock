@@ -1,7 +1,7 @@
 import React,{ Component } from 'react';
 import Timer from './components/Timer';
 import IntervalSetting from './components/IntervalSetting';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 import './App.css';
 
 class App extends Component {
@@ -138,6 +138,7 @@ class App extends Component {
             isPaused={this.state.isPaused} 
             pause={this.pause} 
         />
+        <Footer />
       </div>
     );
   }

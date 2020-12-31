@@ -80,3 +80,29 @@ footer {
       margin: 0 auto;
   }
 }
+
+/* Footer */
+
+#love {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#love > span {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: orange;
+}
+
+#love > img {
+  width: 20px;
+  padding: 10px;
+}
+
+#love > span > a {
+  text-decoration: none;
+  color: rgb(7, 207, 7);
+}
