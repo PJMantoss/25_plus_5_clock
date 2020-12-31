@@ -60,6 +60,11 @@ function App() {
 
   const audioControl = action => {
     const audio = getElementById("beep");
+    if(action === 'rewind'){
+      audio.currentTime = 0;
+    } else{
+      audio[action]();
+    }
   }
 
   return (
