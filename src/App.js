@@ -11,7 +11,7 @@ function App() {
   const [pausedTime, setPausedTime] = useState(null);
   const [time, setTime] = useState('25:00');
 
-  //let intervalTypes = Object.keys(intervals);
+  let intervalTypes = Object.keys(intervals);
 
   const leftPad = value => {
     if(value > 9){
@@ -116,7 +116,13 @@ function App() {
   return (
     <div className="App">
       <h1>25 + 5 Clock</h1>
-      <IntervalSetting />
+      {intervalTypes.map(type => <IntervalSetting 
+                                      key={} 
+                                      type={} 
+                                      length={} 
+                                      handleChange={} 
+                                  />)
+      }
       <Timer />
     </div>
   );
