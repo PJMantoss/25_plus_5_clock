@@ -89,6 +89,10 @@ function App() {
         }, 1000);
   }
 
+  const pause = () => {
+    
+  }
+
   return (
     <div className="App">
       <h1>25 + 5 Clock</h1>
