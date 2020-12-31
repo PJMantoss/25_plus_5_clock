@@ -6,7 +6,12 @@ function Timer(props){
         <section id="timer">
             <h2 id="timer-label">{props.interval}</h2>
             <p id="timer-left">{props.time}</p>
-            <button id="start_stop" onClick={}></button>
+            <button 
+                id="start_stop" 
+                onClick={props.isPaused ? props.start : props.pause}
+            >
+                &#9199;
+            </button>
             <button id="reset" onClick={props.reset}></button>
         </section>
     )
