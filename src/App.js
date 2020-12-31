@@ -11,7 +11,7 @@ function App() {
   const [pausedTime, setPausedTime] = useState(null);
   const [time, setTime] = useState('25:00');
 
-  let intervalTypes = [...intervals];
+  let intervalTypes = Object.keys(intervals);
 
   const leftPad = value => {
     if(value > 9){
@@ -72,7 +72,7 @@ function App() {
     let minutes = getMinutes(),
         seconds = getSeconds();
 
-        this.interval = setInterval(() => {
+        intervals = setInterval(() => {
           seconds--;
           if(seconds < 0){
             if(minutes > 0){
@@ -90,13 +90,13 @@ function App() {
   }
 
   const pause = () => {
-    clearInterval(this.interval);
+    clearInterval(intervals);
     setIsPaused({ isPaused: true })
     setPausedTime({ pausedTime: time.split(':') })
   }
 
   const reset = () => {
-    clearInterval(this.interval);
+    clearInterval(intervals);
     audioControl('pause');
     audioControl('rewind');
 
@@ -114,7 +114,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div>
       <h1>25 + 5 Clock</h1>
       {intervalTypes.map(type => <IntervalSetting 
                                       key={type} 
