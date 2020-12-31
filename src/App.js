@@ -21,6 +21,10 @@ function App() {
     }else{
       intervals[intervalType]--;
     }
+
+    if(intervals[intervalType] >= 1 && intervals[intervalType] <= 60){
+      
+    }
   }
 
   return (
