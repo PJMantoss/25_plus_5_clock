@@ -14,6 +14,9 @@ function App() {
   const handleChange = e => {
     const buttonElementId = e.target.id;
     const [intervalType, intervalDirection] = buttonElementId.split('-');
+    const intervals = {...this.state.intervals};
+
+    if(){}else{}
   }
 
   return (
