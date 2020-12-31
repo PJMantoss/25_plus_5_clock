@@ -40,6 +40,12 @@ function App() {
       }
   }
 
+  const getMinutes = () => {
+    if(pausedTime !=== null){
+      return parseInt(pausedTime[0]);
+    }
+  }
+
   return (
     <div className="App">
       <h1>25 + 5 Clock</h1>
